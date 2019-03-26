@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa"
 
 const Footer = () => (
@@ -150,12 +150,58 @@ const MenuList = styled.ul`
   }
 `
 
+const rotate = keyframes`
+  from {
+    transform: rotate(30deg);
+  }
+
+  10% {
+    transform: rotate(20deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(-20deg);
+  }
+
+  60% {
+    transform: rotate(-30deg);
+  }
+
+  70% {
+    transform: rotate(-20deg);
+  }
+
+  90% {
+    transform: rotate(-10deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+`
+
 const SocialList = styled.ul`
   display: flex;
   justify-content: space-between;
   margin-left: 0;
 
   li {
+    &:hover {
+      animation: ${rotate} 0.2s;
+    }
+
     a {
       color: white;
       transition: 0.2s;
