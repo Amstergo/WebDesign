@@ -46,6 +46,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+  color: white;
 }
 a:active,
 a:hover {
@@ -391,6 +392,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: #cfcfd1;
 }
 figure {
   margin-left: 0;
