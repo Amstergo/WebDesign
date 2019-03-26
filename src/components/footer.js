@@ -120,9 +120,30 @@ const MenuList = styled.ul`
   li {
     a {
       font-weight: 300;
+      position: relative;
+      z-index: 1;
+
+      &:after {
+        content: "";
+        width: 0;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        transition: 0.3s;
+      }
 
       &:hover {
-        color: #ff5733;
+        background: linear-gradient(45deg, white 33%, #ff0000 66%, #ff5733);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &:hover:after {
+        width: 50%;
       }
     }
   }
@@ -149,6 +170,7 @@ const Copyright = styled.p`
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 3em;
   text-align: center;
+  font-size: 16px;
 `
 
 export default Footer

@@ -74,7 +74,6 @@ const Menu = styled.ul`
     font-size: 14px;
 
     a {
-      color: white;
       letter-spacing: 0.1em;
       transition: 0.3s;
       position: relative;
