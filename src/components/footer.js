@@ -118,21 +118,22 @@ const MenuList = styled.ul`
   margin: 0;
 
   li {
+    position: relative;
+    z-index: 1;
+
     a {
       font-weight: 300;
-      position: relative;
-      z-index: 1;
 
       &:after {
         content: "";
-        width: 0;
+        width: 45%;
         height: 100%;
         background-color: white;
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
-        transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+        transform: matrix(1.2, 0, 0.5, 1.2, 50, 0) scaleX(0);
         transition: 0.3s;
       }
 
@@ -143,7 +144,7 @@ const MenuList = styled.ul`
       }
 
       &:hover:after {
-        width: 50%;
+        transform: matrix(1.2, 0, 0.5, 1.2, 50, 0) scaleX(1);
       }
     }
   }
