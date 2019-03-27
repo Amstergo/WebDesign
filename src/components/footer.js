@@ -199,7 +199,7 @@ const SocialList = styled.ul`
 
   li {
     &:hover {
-      animation: ${rotate} 0.2s;
+      animation: ${rotate} 0.2s linear;
     }
 
     a {
