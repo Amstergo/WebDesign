@@ -14,7 +14,7 @@ const Hero = () => (
         <h1>Web Design Conference 2019</h1>
       </Fade>
       <Fade bottom delay={700}>
-        <span>September 6th-7th, Minnesota, United States</span>
+        <Date>September 6th-7th, Minnesota, United States</Date>
       </Fade>
       <Fade bottom delay={800}>
         <Button />
@@ -32,6 +32,13 @@ const HeroWrapper = styled.div`
   @media (max-width: 1200px) {
     justify-content: center;
   }
+`
+
+const Date = styled.span`
+  margin-bottom: 50px;
+  color: white;
+  font-size: 1.5rem;
+  display: block;
 `
 
 const HeroContainer = styled.div`

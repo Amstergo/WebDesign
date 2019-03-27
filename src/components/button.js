@@ -43,7 +43,7 @@ const ButtonWrapper = styled(Link)`
     width: 100%;
     height: 100%;
     z-index: -1;
-    transform: translate(-100%);
+    transform: translate(-101%);
     transition: 0.3s all ease-in-out;
     background: linear-gradient(to right, #c70039, #ff5733 70%);
     background-size: 200% 200%;
