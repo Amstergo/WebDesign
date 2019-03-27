@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 
+import Button from "./button"
+
 const Hero = () => (
   <HeroWrapper>
     <HeroContainer>
@@ -13,6 +15,9 @@ const Hero = () => (
       </Fade>
       <Fade bottom delay={700}>
         <span>September 6th-7th, Minnesota, United States</span>
+      </Fade>
+      <Fade bottom delay={800}>
+        <Button />
       </Fade>
     </HeroContainer>
   </HeroWrapper>
@@ -32,10 +37,11 @@ const HeroWrapper = styled.div`
 const HeroContainer = styled.div`
   padding: 0 15px;
 
-  span {
+  > span {
     color: white;
     font-size: 1.5rem;
     display: block;
+    margin-bottom: 20px;
   }
 
   h1 {
@@ -45,7 +51,7 @@ const HeroContainer = styled.div`
     -webkit-text-fill-color: transparent;
     font-weight: 400;
     line-height: 1.3;
-    margin: 20px 0;
+    margin-bottom: 20px;
 
     @media (max-width: 990px) {
       font-size: 1.8rem;
