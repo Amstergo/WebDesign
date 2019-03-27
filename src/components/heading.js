@@ -24,7 +24,7 @@ const Heading = () => (
 
 const HeadingWrapper = styled.div`
   display: flex;
-  padding: 0 15px;
+  margin-bottom: 50px;
 
   @media (max-width: 990px) {
     flex-direction: column;
