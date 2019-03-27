@@ -28,6 +28,7 @@ const HeroWrapper = styled.div`
   height: calc(100vh - 95px);
   display: flex;
   align-items: center;
+  margin-bottom: 10em;
 
   @media (max-width: 1200px) {
     justify-content: center;
