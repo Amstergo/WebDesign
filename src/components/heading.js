@@ -2,21 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 
-const Heading = () => (
+const Heading = props => (
   <HeadingWrapper>
     <ContainerTitle>
       <Fade left>
-        <h1>Speakers</h1>
+        <h1>{props.title}</h1>
       </Fade>
     </ContainerTitle>
     <ContainerDesc>
       <Fade bottom>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error
-          deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab
-          voluptatibus. Minima architecto impedit eaque molestiae dicta quam.
-          Cum ducimus. Culpa distinctio aperiam
-        </p>
+        <p>{props.description}</p>
       </Fade>
     </ContainerDesc>
   </HeadingWrapper>
