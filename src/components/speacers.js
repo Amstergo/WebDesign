@@ -20,7 +20,7 @@ const Speacers = ({ data }) => (
     <StaticQuery
       query={PERSON_QUERY}
       render={data => (
-        <SpeacersContainer>
+        <>
           <SpeacerBox>
             <Fade>
               <Img fluid={data.person1.childImageSharp.fluid} />
@@ -205,7 +205,7 @@ const Speacers = ({ data }) => (
               </DescriptionText>
             </Description>
           </SpeacerBox>
-        </SpeacersContainer>
+        </>
       )}
     />
   </SpeacersWrapper>
@@ -214,6 +214,7 @@ const Speacers = ({ data }) => (
 const SpeacersWrapper = styled.div`
   margin: 0 auto;
   padding: 0 15px;
+  padding-bottom: 150px;
 
   @media (max-width: 1200px) {
     max-width: 960px;
@@ -227,8 +228,6 @@ const SpeacersWrapper = styled.div`
     max-width: 540px;
   }
 `
-
-const SpeacersContainer = styled.div``
 
 const SpeacerBox = styled.div`
   display: grid;
