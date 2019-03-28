@@ -23,7 +23,7 @@ const Speacers = ({ data }) => (
         <SpeacersContainer>
           <SpeacerBox>
             <Fade>
-              <Photo fluid={data.person1.childImageSharp.fluid} />
+              <Img fluid={data.person1.childImageSharp.fluid} />
             </Fade>
             <Description>
               <Fade right>
@@ -69,7 +69,7 @@ const Speacers = ({ data }) => (
           </SpeacerBox>
           <SpeacerBox>
             <Fade>
-              <Photo fluid={data.person2.childImageSharp.fluid} />
+              <Img fluid={data.person2.childImageSharp.fluid} />
             </Fade>
             <Description>
               <Fade left>
@@ -115,7 +115,7 @@ const Speacers = ({ data }) => (
           </SpeacerBox>
           <SpeacerBox>
             <Fade>
-              <Photo fluid={data.person3.childImageSharp.fluid} />
+              <Img fluid={data.person3.childImageSharp.fluid} />
             </Fade>
             <Description>
               <Fade right>
@@ -161,7 +161,7 @@ const Speacers = ({ data }) => (
           </SpeacerBox>
           <SpeacerBox>
             <Fade>
-              <Photo fluid={data.person4.childImageSharp.fluid} />
+              <Img fluid={data.person4.childImageSharp.fluid} />
             </Fade>
             <Description>
               <Fade left>
@@ -258,8 +258,6 @@ const SpeacerBox = styled.div`
   }
 `
 
-const Photo = styled(Img)``
-
 const Description = styled.div`
   align-self: center;
 
@@ -305,6 +303,7 @@ const Follow = styled.p`
     display: flex;
     flex-wrap: wrap;
     font-size: 15px;
+    margin-left: 15px;
 
     li {
       margin-right: 15px;
