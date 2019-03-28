@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import styled, { keyframes } from "styled-components"
 
-const Button = () => (
+const Button = props => (
   <ButtonWrapper to="/">
-    <span>buy tickets</span>
+    <span>{props.name}</span>
   </ButtonWrapper>
 )
 

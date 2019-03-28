@@ -17,7 +17,7 @@ const Hero = () => (
         <Date>September 6th-7th, Minnesota, United States</Date>
       </Fade>
       <Fade bottom delay={800}>
-        <Button />
+        <Button name="buy tickets" />
       </Fade>
     </HeroContainer>
   </HeroWrapper>

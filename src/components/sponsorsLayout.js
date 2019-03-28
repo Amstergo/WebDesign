@@ -5,6 +5,7 @@ import Fade from "react-reveal/Fade"
 
 import Heading from "./heading"
 import Sponsor from "./sponsor"
+import Button from "./button"
 
 const SponsorsLayout = ({ data }) => (
   <SponsorsWrapper>
@@ -42,6 +43,7 @@ const SponsorsLayout = ({ data }) => (
         )}
       />
     </SponsorsContainer>
+    <Button name="by a sponsor" />
   </SponsorsWrapper>
 )
 
@@ -49,6 +51,11 @@ const SponsorsWrapper = styled.div`
   margin: 0 auto;
   padding: 0 15px;
   padding-bottom: 150px;
+
+  > a {
+    display: table;
+    margin: 0 auto;
+  }
 
   @media (max-width: 1200px) {
     max-width: 960px;
@@ -66,6 +73,8 @@ const SponsorsWrapper = styled.div`
 const SponsorsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding-bottom: 50px;
 
   @media (max-width: 990px) {
     grid-template-columns: 1fr 1fr;
